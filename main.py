@@ -469,7 +469,7 @@ temp = home / "temp"
 libraries = home / "libraries"
 java8 = home / "java" / "java8"
 java6 = home / "java" / "java6"
-ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID("mblc7.cabridge.1.0.6.1")
+ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID("mblc7.cabridge.1.0.7.0")
 leveldat = home / "level.dat"
 
 def curl(file, url):
@@ -604,7 +604,7 @@ class Ui_MainWindow(object):
         self.tabWidget.setCurrentIndex(0)
         QMetaObject.connectSlotsByName(MainWindow)
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", "Cabridge 1.0.6_01", None))
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", "Cabridge 1.0.7", None))
         # self.checkhash.setText(QCoreApplication.translate("MainWindow", "检查完整性", None))
         self.launchgame.setText(QCoreApplication.translate("MainWindow", "启动游戏", None))
         self.deleteversion.setText(QCoreApplication.translate("MainWindow", "删除版本", None))
@@ -616,8 +616,8 @@ class Ui_MainWindow(object):
             self.lineEdit.setText(tclj["username"])
         else:
             self.lineEdit.setText("")
-        self.lineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", "\u73a9\u5bb6\u540d", None))
-        self.closegame.setText(QCoreApplication.translate("MainWindow", "\u23fb", None))
+        self.lineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", "玩家名", None))
+        self.closegame.setText(QCoreApplication.translate("MainWindow", "⏻", None))
         self.textBrowser.setHtml(QCoreApplication.translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -632,7 +632,7 @@ class Ui_MainWindow(object):
         self.downloadbtn.setText(QCoreApplication.translate("MainWindow", "下载", None))
         self.copyright.setText(QCoreApplication.translate("MainWindow", "Copyright © MBLC7 2026. All Rights Reserved.", None))
         self.email.setText(QCoreApplication.translate("MainWindow", "mineberlin777@gmail.com", None))
-        self.version.setText(QCoreApplication.translate("MainWindow", "Cabridge 1.0.6_01", None))
+        self.version.setText(QCoreApplication.translate("MainWindow", "Cabridge 1.0.7", None))
         self.website.setText(QCoreApplication.translate("MainWindow", "https://mineberlin777.github.io/cabridge", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), QCoreApplication.translate("MainWindow", "⚙️下载/设置", None))
 
